@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">@string/APP_DISPLAY_NAME</string>
+    <string name="facebook_app_id">@string/FACEBOOK_APP_ID</string>
+    <string name="facebook_client_token">@string/FACEBOOK_CLIENT_TOKEN</string>
+    <string name="fb_login_protocol_scheme">fb1498139217250116</string>
+    <string name="google_map_key">@string/GOOGLE_MAP_KEY</string>
+    <string name="version">@string/VERSION_NAME</string>
+    <string name="dynamic_link">@string/DYNAMIC_LINK</string>
+
+    <string name="appCenterCrashes_whenToSendCrashes" moduleConfig="true" translatable="false">DO_NOT_ASK_JAVASCRIPT</string>
+    <string name="appCenterAnalytics_whenToEnableAnalytics" moduleConfig="true" translatable="false">ALWAYS_SEND</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">86TsVIfZGG2YcmRKCGMxCyQ21ljOwbkm4VeBC</string>
+
+</resources>

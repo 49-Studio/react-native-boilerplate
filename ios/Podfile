@@ -1,0 +1,66 @@
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+
+platform :ios, '11.0'
+
+target 'livestreamapp' do
+  config = use_native_modules!
+
+  use_react_native!(
+    :path => config[:reactNativePath],
+    # to enable hermes on iOS, change `false` to `true` and then install pods
+    :hermes_enabled => true
+  )
+
+  pod 'react-native-config/Extension', :path => '../node_modules/react-native-config'
+  permissions_path = '../node_modules/react-native-permissions/ios'
+  pod 'Permission-Camera', :path => "#{permissions_path}/Camera"
+  pod 'Permission-PhotoLibrary', :path => "#{permissions_path}/PhotoLibrary"
+  pod 'Permission-MediaLibrary', :path => "#{permissions_path}/MediaLibrary"
+  pod 'Permission-LocationAccuracy', :path => "#{permissions_path}/LocationAccuracy"
+  pod 'Permission-LocationAlways', :path => "#{permissions_path}/LocationAlways"
+  pod 'Permission-LocationWhenInUse', :path => "#{permissions_path}/LocationWhenInUse"
+  pod 'Permission-Microphone', :path => "#{permissions_path}/Microphone"
+  pod 'CodePush', :path => '../node_modules/react-native-code-push'
+  pod 'Firebase/Analytics'
+  pod 'Firebase'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/InAppMessaging'
+  pod 'Firebase/Messaging'
+  pod 'GoogleSignIn', '~> 6.1.0'
+  pod 'react-native-fbsdk-next', :path => '../node_modules/react-native-fbsdk-next'
+  pod 'FBSDKLoginKit'
+
+
+ rn_maps_path = '../node_modules/react-native-maps'
+  pod 'react-native-google-maps', :path => rn_maps_path
+  pod 'GoogleMaps'
+  pod 'Google-Maps-iOS-Utils'
+
+  # CodePush plugin dependency
+  pod 'CodePush', :path => '../node_modules/react-native-code-push'
+
+  
+  pod 'react-native-webview', :path => '../node_modules/react-native-webview'
+
+  pod 'react-native-date-picker', :path => '../node_modules/react-native-date-picker'
+
+  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+
+  target 'livestreamappTests' do
+    inherit! :complete
+    # Pods for testing
+  end
+
+  # Enables Flipper.
+  #
+  # Note that if you have use_frameworks! enabled, Flipper will not work and
+  # you should disable the next line.
+  use_flipper!()
+
+  post_install do |installer|
+    react_native_post_install(installer)
+    __apply_Xcode_12_5_M1_post_install_workaround(installer)
+  end
+end

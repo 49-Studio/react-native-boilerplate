@@ -1,0 +1,11 @@
+<resources>
+	<color name="primary">
+		#3772FF
+	</color>
+	<color name="status_bar_color">
+		#3772FF
+	</color>
+	<color name="white">
+		#FFFFFF
+	</color>
+</resources>

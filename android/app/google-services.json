@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1012977029333",
+    "project_id": "livestream-app-99e77",
+    "storage_bucket": "livestream-app-99e77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012977029333:android:787936f3f377d6c116525c",
+        "android_client_info": {
+          "package_name": "com.app.virtualeverywhere"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012977029333-tej6jpc4r09bm8pndfl62ub9k5hdlm2f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.virtualeverywhere",
+            "certificate_hash": "eef65639745f2733bf8eaf094ff7ab90534eba77"
+          }
+        },
+        {
+          "client_id": "1012977029333-ccqumeqcqd3fdhuvqp1gjjl8gm8iq8be.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOdLgWZT779gACYk4ngogb0L02oOxWNrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012977029333-ccqumeqcqd3fdhuvqp1gjjl8gm8iq8be.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1012977029333-0mb4allunhj1u9h79kct7u8adnirjruk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.virtualeverywhere"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
